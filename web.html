@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Лаба 1</title>
+    <style>
+        textarea { resize: none; }
+    </style>
+    <script src="validation.js"></script>
+    <link   rel="icon" type="image" href="images/Logo.jpg"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <h1 class="head">Лесных С.И. P3210 2110</h1>
+</header>
+<table width="100%" border="1" align="center" cellpadding="4" cellspacing="0">
+    <tr>
+        <td width="94" height="30">
+            <form onclick="validationX(name)" onsubmit="return false">
+                <p id="resX">Выберете X</p>
+                <button name="-4" class="VButton">
+                    -4
+                </button>
+                <button name="-3" class="VButton">
+                    -3
+                </button>
+                <button name="-2" class="VButton">
+                    -2
+                </button>
+                <button name="-1" class="VButton">
+                    -1
+                </button>
+                <button name="0" class="VButton">
+                    0
+                </button>
+                <button name="1" class="VButton">
+                    1
+                </button>
+                <button name="2" class="VButton">
+                    2
+                </button>
+                <button name="3" class="VButton">
+                    3
+                </button>
+                <button name="4" class="VButton">
+                    4
+                </button>
+            </form>
+            <p>Введите Y</p>
+            <p><textarea rows="1" placeholder="промежуток от -3 до 5" cols="45" name="valueY" id="Y" class="TextBox"></textarea></p>
+            <form>
+                <input type = 'button' value = 'Проверить' class="CButton" onClick = 'validationY()'/><img src="#" alt="" id="resY">
+            </form>
+            <p>Введите R</p>
+            <p><textarea rows="1" cols="45" placeholder="промежуток от 1 до 4" name="valueR" id="R" class="TextBoxR" ></textarea></p>
+            <form>
+                <input type = 'button' value = 'Проверить' class="CButton" onClick = 'validationR()'/><img src="#" alt="" id="resR">
+            </form>
+            <form>
+                <p><input type="button" value="Нажми меня нежно..." class="Neshno" onclick="validation()"></p>
+            </form>
+        </td>
+        <td width="184" rowspan="2" valign="top">
+            <img src="images/Graphik.png" alt="Areas" align="right" class="graphic">
+        </td>
+    </tr>
+</table>
+<div id="outputContainer"></div>
+</body>
+</html>

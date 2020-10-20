@@ -1,0 +1,66 @@
+body{
+    background: antiquewhite;
+    font-family: Cambria;
+}
+td{
+    border-width: 0px;
+}
+
+.VButton{
+    text-align: center;
+    font-size: 13px;
+    padding: 3px 6px;
+    background: blue;
+    color: wheat;
+    border-radius: 30px;
+}
+.VButton:active{
+    background: wheat;
+    color: black;
+}
+.VButton:hover{
+    box-shadow:0px 0px 12px blue;
+    background: snow;
+    color: black;
+}
+.TextBox{
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightblue;
+}
+.TextBoxR{
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightblue;
+}
+.CButton{
+    border-radius: 10px;
+    background: blue;
+    color: snow;
+}
+.CButton:hover{
+    box-shadow:0px 0px 12px blue;
+    background: snow;
+    color: black;
+}
+.CButton:active{
+    background: wheat;
+    color: black;
+}
+.Neshno{
+    border-radius: 10px;
+    background: blue;
+    color: snow;
+}
+.Neshno:hover{
+    box-shadow:0px 0px 12px deeppink;
+    background: deeppink;
+    color: black;
+}
+.Neshno:active{
+    background: deeppink;
+    color: black;
+}
+.graphic{
+    position: absolute;
+    left: 400px;
+    right: 200px;
+}
