@@ -1,6 +1,6 @@
-let YCorrect;
-let RCorrect;
-let XCorrect;
+let YCorrect = false;
+let RCorrect = false;
+let XCorrect = false;
 
 let x;
 let y;
@@ -17,7 +17,7 @@ function validationY(){
         y = Y;
     }else {
         YCorrect = false;
-        resY.src = "images/redCross.png";
+        resY.src = "images/redCheckMark.png";
         resY.height = "15";
         resY.width = "15";
     }
@@ -34,7 +34,7 @@ function validationR(){
         r = R;
     }else {
         RCorrect = false;
-        resR.src = "images/redCross.png";
+        resR.src = "images/redCheckMark.png";
         resR.height = "15";
         resR.width = "15";
     }
@@ -43,7 +43,7 @@ function validationR(){
 function validationX(){
     x = document.activeElement.name;
     XCorrect = true;
-    document.getElementById("resX").innerText = "Вы выбрали " + x;
+    document.getElementById("resX").innerHTML = "Вы выбрали " + x;
 }
 
 function validation(){
@@ -54,7 +54,7 @@ function validation(){
         validationR();
     }
     if(!XCorrect){
-        validationX();
+        blinktext();
     }
     if(XCorrect && YCorrect && RCorrect) {
         XCorrect = false;
@@ -88,4 +88,15 @@ function createNotification(message) {
         let span = document.querySelector(".notification");
         span.textContent = message;
     }
+}
+
+function blinktext() {
+    let f = document.getElementById('resX');
+
+    let interval = setInterval(function() {
+        f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');
+    }, 450);
+    setTimeout(function (){
+        clearInterval(interval);
+    },10000);
 }

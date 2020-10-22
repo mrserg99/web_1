@@ -17,43 +17,25 @@
 <table width="100%" border="1" align="center" cellpadding="4" cellspacing="0">
     <tr>
         <td width="94" height="30">
-            <form onclick="validationX(name)" onsubmit="return false">
-                <p id="resX">Выберете X</p>
-                <button name="-4" class="VButton">
-                    -4
-                </button>
-                <button name="-3" class="VButton">
-                    -3
-                </button>
-                <button name="-2" class="VButton">
-                    -2
-                </button>
-                <button name="-1" class="VButton">
-                    -1
-                </button>
-                <button name="0" class="VButton">
-                    0
-                </button>
-                <button name="1" class="VButton">
-                    1
-                </button>
-                <button name="2" class="VButton">
-                    2
-                </button>
-                <button name="3" class="VButton">
-                    3
-                </button>
-                <button name="4" class="VButton">
-                    4
-                </button>
+            <p id="resX">Выберете X</p>
+            <form onsubmit="validationX(name); return false">
+                <input type="submit" name="-4" class="VButton" value="-4">
+                <input type="submit" name="-3" class="VButton" value="-3">
+                <input type="submit" name="-2" class="VButton" value="-2">
+                <input type="submit" name="-1" class="VButton" value="-1">
+                <input type="submit" name="0" class="VButton" value="0">
+                <input type="submit" name="1" class="VButton" value="1">
+                <input type="submit" name="2" class="VButton" value="2">
+                <input type="submit" name="3" class="VButton" value="3">
+                <input type="submit" name="4" class="VButton" value="4">
             </form>
             <p>Введите Y</p>
-            <p><textarea rows="1" placeholder="промежуток от -3 до 5" cols="45" name="valueY" id="Y" class="TextBox"></textarea></p>
+            <p><textarea rows="1" placeholder="промежуток от -3 до 5" cols="45" name="valueY" id="Y" class="TextBox" maxlength="13"></textarea></p>
             <form>
                 <input type = 'button' value = 'Проверить' class="CButton" onClick = 'validationY()'/><img src="#" alt="" id="resY">
             </form>
             <p>Введите R</p>
-            <p><textarea rows="1" cols="45" placeholder="промежуток от 1 до 4" name="valueR" id="R" class="TextBoxR" ></textarea></p>
+            <p><textarea rows="1" cols="45" placeholder="промежуток от 1 до 4" name="valueR" id="R" class="TextBoxR" maxlength="13"></textarea></p>
             <form>
                 <input type = 'button' value = 'Проверить' class="CButton" onClick = 'validationR()'/><img src="#" alt="" id="resR">
             </form>
